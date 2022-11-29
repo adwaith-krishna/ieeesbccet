@@ -13,10 +13,12 @@ function Navbar() {
       
     <>
      <nav>
-
+     <div class="logo"> <a href="/">IEEE CCET SB</a></div>
       
         <div>
-       <ul id="navbar">
+       <ul id="navbar" className={click==0 ? "navbar active" : "#navbar" }>
+
+       
            <li><a className='active' href='/home.html'>Home</a></li>
              <li><a href='/home.html'>About</a></li>
              <li><a href='/home'>Execom</a></li>
@@ -31,7 +33,7 @@ function Navbar() {
              <div id='mobile' onClick={()=>setClick(!click)}>
               <i 
               id="bar"
-              className={click==0 ? "fas fa-bars":"fas fa-times"}></i>
+              className={click==0 ?"fas fa-bars" : "fas fa-times"}></i>
              
 
              </div>

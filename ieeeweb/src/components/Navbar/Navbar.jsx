@@ -13,7 +13,8 @@ function Navbar() {
       
     <>
      <nav>
-     <div class="logo"> <a href="/">IEEE CCET SB</a></div>
+     <div className="logo"> <a href="/">IEEE CCET SB</a></div>
+     <div className="mobile-logo"> <a href="/">IEEE CCET</a></div>
       
         <div>
        <ul id="navbar" className={click==0 ? "navbar active" : "#navbar" }>

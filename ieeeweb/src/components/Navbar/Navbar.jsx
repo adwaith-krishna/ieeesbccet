@@ -13,7 +13,7 @@ function Navbar() {
       
     <>
      <nav>
-     <div className="logo"> <a href="/">IEEE CCET SB</a></div>
+     <div className="logo"> <a href="/">IEEE CCET </a></div>
      <div className="mobile-logo"> <a href="/">IEEE CCET</a></div>
       
         <div>

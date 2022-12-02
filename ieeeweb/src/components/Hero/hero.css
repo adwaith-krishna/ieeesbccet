@@ -10,75 +10,166 @@ radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
 radial-gradient(at 32% 38%, hsla(242,100%,70%,1) 0px, transparent 50%),
 radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%); */
 
-background-color: rgb(122,31,185);
-background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23f2eef8' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 
+background-image: radial-gradient(#ff8a00, #e52e71);
+background-image: radial-gradient(circle at top right, #ff8a00, red, #e52e71);
 
 height: 100vh;
 }
 
 .herotxt{
-    display: flex;
-    color:RGB(255, 255, 255);
+    /* display: flex;
+    color:rgba(255, 255, 255, 0.959);
     
     font-family: 'Alfa Slab One', cursive;
     position: relative;
     
     
-    font-size: 80px;
+    font-size: 70px;
     line-height: 108px;
     vertical-align:baseline;
     letter-spacing:2.8889px;
     
-    text-decoration: none solid rgb(255, 255, 255);
+    text-decoration: none solid rgba(255, 255, 255, 0.795);
     text-align: center;
     align-items: center;
     flex-direction: column;
-    top : 220px;
-        }
+    top : 220px; */
+   
+    display: flex;
+    flex-direction: column;
+    top : 250px;
+    background-position: center center;
+       
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+       
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5.2em;
+    letter-spacing: 0.1em;
+
+    animation: fadeInUp 1s forwards;
+    animation-delay: 300ms;
+    opacity: 0;
+   
+  }
+        
 
 
  .herotxtsub{
     display: flex;
-    color:rgb(0, 255, 179);
-    
-    font-family: 'Alfa Slab One', cursive;
-    position: fixed;
-    
-    
-    font-size: 40px;
-    line-height: 108px;
-    vertical-align:baseline;
-    letter-spacing:0.8889px;
-    
-    text-decoration: none solid rgb(255, 255, 255);
-    text-align: center;
-    align-items: center;
+    position: relative;
     flex-direction: column;
-    top : 360px;
-    left: 22%;
+    top:250px ;
+    
+    color: #f9f1e9;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.9em;
+    letter-spacing: 0.1em;
+    
+    
+
+    animation: fadeIn 1s forwards;
+    animation-delay: 1000ms;
+    opacity: 0;
+  
  }
+
+
+
+    
+  
+  /* animations */
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+  }
+  
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      
+    }
+
+    50% {
+        opacity: .5;
+        
+      }
+  
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  
+
+  
+
+  
 
 @media screen and (max-width:769px){
     .herotxt{
         display: flex;
-        color:RGB(255, 255, 255);
-        
-        font-family: 'Alfa Slab One', cursive;
-        position: fixed;
-        
-        width: 120px;
-        font-size: 40px;
-        line-height: 108px;
-        vertical-align:baseline;
-        letter-spacing:2.8889px;
-        
-        text-decoration: none solid rgb(255, 255, 255);
-        text-align: center;
-        align-items:flex-start;
-        flex-direction: column;
-        top : 180px;
+    flex-direction: column;
+    top : 150px;
+    background-position: center center;
+       
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+       
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.7em;
+    letter-spacing: 0.1em;
+
+    animation: fadeInUp 1s forwards;
+    animation-delay: 300ms;
+    opacity: 0;
             }
+
+
+
+            .herotxtsub{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                top:160px ;
+                
+                color: #f9f1e9;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 1.5em;
+                letter-spacing: 0.1em;
+                
+                
+            
+                animation: fadeIn 1s forwards;
+                animation-delay: 1000ms;
+                opacity: 0;
+              
+             }
+            
             
 
 

@@ -9,6 +9,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   background-color: rgb(122,31,185);
+ 
   padding: 20px 80px;
   box-shadow: 0 5px 15px  rgba(0,0,0,0.06);
   
@@ -46,23 +47,27 @@ nav{
   list-style: none;
   padding: 0 20px;
   position: relative;
+  left: -40%;
+ 
 }
 
 #navbar li a{
+  position: relative;
+  
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
   color: rgb(255, 255, 255);
   transition: 0.3s ease-in-out;
 }
+/* #navbar li a.active */
+#navbar li a:hover
 
-#navbar li a:hover,
-#navbar li a.active
 {
-  color: rgb(0, 255, 179);
+  /* color: rgb(0, 255, 179); */
+  color:  #f70808;
+
 }
-
-
 
 #mobile{
   display: none;
